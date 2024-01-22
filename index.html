@@ -6,8 +6,65 @@
     <title>Document</title>
     <!-- css link -->
     <link rel="stylesheet" href="Styles/style.css">
+    <!-- tailwinds & daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google manrope fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- customizing color -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                blackColor: '#131318',
+                whiteColor: '#FFFFFF'
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    
+    <header class="container mx-auto    p-3      relative">
+        <!-- banner section -->
+        <div class="carousel w-full ">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full my-auto" />
+              <div class="absolute flex justify-center gap-8 lg:gap-20 transform -translate-y-1/2 left-5 lg:left-0 right-5 lg:right-3/4 top-3/4 ">
+                <a href="#slide4" class="btn btn-circle bg-blackColor border-none text-whiteColor">❮</a> 
+                <a href="#slide2" class="btn btn-circle bg-blackColor border-none text-whiteColor">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/2.png" class="w-full" />
+              <div class="absolute flex justify-center gap-8 lg:gap-20 transform -translate-y-1/2 left-5 lg:left-0 right-5 lg:right-3/4 top-3/4 ">
+                <a href="#slide1" class="btn btn-circle bg-blackColor border-none text-whiteColor">❮</a> 
+                <a href="#slide3" class="btn btn-circle bg-blackColor border-none text-whiteColor">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="Images/3.png" class="w-full" />
+              <div class="absolute flex justify-center gap-8 lg:gap-20 transform -translate-y-1/2 left-5 lg:left-0 right-5 lg:right-3/4 top-3/4 ">
+                <a href="#slide2" class="btn btn-circle bg-blackColor border-none text-whiteColor">❮</a> 
+                <a href="#slide4" class="btn btn-circle bg-blackColor border-none text-whiteColor">❯</a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <img src="Images/4.png" class="w-full" />
+              <div class="absolute flex justify-center gap-8 lg:gap-20 transform -translate-y-1/2 left-5 lg:left-0 right-5 lg:right-3/4 top-3/4 ">
+                <a href="#slide3" class="btn btn-circle bg-blackColor border-none text-whiteColor">❮</a> 
+                <a href="#slide1" class="btn btn-circle bg-blackColor border-none text-whiteColor">❯</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bg-blackColor text-whiteColor  lg:absolute lg:bottom-20 lg:right-20 lg:h-25% lg:w-3/6 lg:p-8 p-5 lg:rounded-2xl rounded-md lg:space-y-4 space-y-2">
+            <h2 class="text-lg lg:text-2xl font-bold">Meet all the heroes from the field</h2>
+            <p class="text-sm lg:text-xl font-thin">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis <br>placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+    </header>
 </body>
 </html>
