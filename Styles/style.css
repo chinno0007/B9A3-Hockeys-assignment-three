@@ -1,0 +1,15 @@
+/* .making-circle{
+    stroke-dasharray: 400, 400;
+    transition: stroke-dashoffset 0.35s;
+    transform: rotate(-180deg);
+    transform-origin: 50% 50%;
+
+} */
+
+.bg-images{
+    background-image: url('../Images/2.png');
+    height: 50vh;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
